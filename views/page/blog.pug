@@ -1,0 +1,371 @@
+extends ../layout/master
+block content
+    nav#breadcrumbs.breadcrumbs
+        .container.page-wrapper
+            a(href='index.html') Home
+            |  / Blog / 
+            span.breadcrumb_last(aria-current='page')
+                | Featured
+                | posts
+    .display-ad(style='margin: 8px auto; display: block; text-align:center;')
+    section#blog-slider.w3l-blog-slider
+        // main-slider
+        .blog-slider.py-5
+            .container.py-lg-4.py-md-3.mb-md-0.mb-5
+                h3.section-title-left All Featured posts 
+                .owl-testimonial.owl-carousel.owl-theme
+                    .item
+                        .row
+                            .col-lg-6
+                                a(href='blog-single.html')
+                                    img.card-img-bottom.d-block.radius-image(src='/assets/images/p3.jpg' alt='Card image cap')
+                            .col-lg-6.blog-details.align-self.mt-lg-0.mt-4
+                                a.blog-desc-big(href='blog-single.html')
+                                    | How to Start a Blog from Scratch
+                                    | and with No Experience
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis, odit non
+                                    | asperiores
+                                    | possimus voluptas sit nihil nam id explicabo saepe sapiente excepturi similique,
+                                    | dicta
+                                    | officia odio natus nemo. Ratione ipsa distinctio explicabo esse quod autem
+                                    | veritatis, in fugit odio.
+                                .author.align-items-center.mt-4.mb-1
+                                    a(href='author.html') Johnson smith
+                                    |  in 
+                                    a(href='#url') Design
+                                ul.blog-meta
+                                    li.meta-item.blog-lesson
+                                        span.meta-value  April 13, 2020 
+                                    li.meta-item.blog-students
+                                        span.meta-value  6min read
+                    .item
+                        .row
+                            .col-lg-6
+                                a(href='blog-single.html')
+                                    img.card-img-bottom.d-block.radius-image(src='/assets/images/p2.jpg' alt='Card image cap')
+                            .col-lg-6.blog-details.align-self.mt-lg-0.mt-4
+                                a.blog-desc-big(href='blog-single.html')
+                                    | What Else you need to reach the
+                                    | next level of Blogging
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis, odit non
+                                    | asperiores
+                                    | possimus voluptas sit nihil nam id explicabo saepe sapiente excepturi similique,
+                                    | dicta
+                                    | officia odio natus nemo. Ratione ipsa distinctio explicabo esse quod autem
+                                    | veritatis, in fugit odio.
+                                .author.align-items-center.mt-4.mb-1
+                                    a(href='author.html') Johnson smith
+                                    |  in 
+                                    a(href='#url') Design
+                                ul.blog-meta
+                                    li.meta-item.blog-lesson
+                                        span.meta-value  April 13, 2020 
+                                    li.meta-item.blog-students
+                                        span.meta-value  6min read
+                    .item
+                        .row
+                            .col-lg-6
+                                a(href='blog-single.html')
+                                    img.card-img-bottom.d-block.radius-image(src='/assets/images/p1.jpg' alt='Card image cap')
+                            .col-lg-6.blog-details.align-self.mt-lg-0.mt-4
+                                a.blog-desc-big(href='blog-single.html')
+                                    | How to select a great domain name
+                                    | for your Business
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis, odit non
+                                    | asperiores
+                                    | possimus voluptas sit nihil nam id explicabo saepe sapiente excepturi similique,
+                                    | dicta
+                                    | officia odio natus nemo. Ratione ipsa distinctio explicabo esse quod autem
+                                    | veritatis, in fugit odio.
+                                .author.align-items-center.mt-4.mb-1
+                                    a(href='author.html') Johnson smith
+                                    |  in 
+                                    a(href='#url') Design
+                                ul.blog-meta
+                                    li.meta-item.blog-lesson
+                                        span.meta-value  April 13, 2020 
+                                    li.meta-item.blog-students
+                                        span.meta-value  6min read
+                    .item
+                        .row
+                            .col-lg-6
+                                a(href='blog-single.html')
+                                    img.card-img-bottom.d-block.radius-image(src='/assets/images/blog.jpg' alt='Card image cap')
+                            .col-lg-6.blog-details.align-self.mt-lg-0.mt-4
+                                a.blog-desc-big(href='blog-single.html')
+                                    | Just remember these 3 secrets when
+                                    | picking a domain name for your blog.
+                                p
+                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis, odit non
+                                    | asperiores
+                                    | possimus voluptas sit nihil nam id explicabo saepe sapiente excepturi similique,
+                                    | dicta
+                                    | officia odio natus nemo. Ratione ipsa distinctio explicabo esse quod autem
+                                    | veritatis, in fugit odio.
+                                .author.align-items-center.mt-4.mb-1
+                                    a(href='author.html') Johnson smith
+                                    |  in 
+                                    a(href='#url') Design
+                                ul.blog-meta
+                                    li.meta-item.blog-lesson
+                                        span.meta-value  April 13, 2020 
+                                    li.meta-item.blog-students
+                                        span.meta-value  6min read
+        // /main-slider
+    .display-ad(style='margin: 8px auto; display: block; text-align:center;')
+        // -728x90-
+    section.w3l-blog-block2.mt-md-5
+        .container.mb-lg-4
+            .row
+                .col-lg-4.col-md-6.item
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p2.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | Here are a few tips that will help you to
+                                | get started about lifestyle
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-md-0.mt-5
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p1.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | How to Create Detailed Buyer Personas for
+                                | Your
+                                | Business
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-lg-0.mt-5
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p4.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | Guidelines to help you decide what your
+                                | blog post should be about.
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p3.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | Keyword research for dummies using the
+                                | Google Keyword tool
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p5.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | Home to Customize your blog&apos;s theme with 3
+                                | simple steps
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | The Beginner&apos;s Guide to Starting a
+                                | Successful Blog in 2020
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p6.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | 10 Fresh Ways to Get Better Results From
+                                | Your Blog Posts
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p7.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | 9 Reasons why your Blog posts are Hard to
+                                | Read
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+                .col-lg-4.col-md-6.item.mt-5.pt-lg-3
+                    .card
+                        .card-header.p-0.position-relative
+                            a(href='blog-single.html')
+                                img.card-img-bottom.d-block.radius-image(src='/assets/images/p8.jpg' alt='Card image cap')
+                        .card-body.p-0.blog-details
+                            a.blog-desc(href='blog-single.html')
+                                | What I Wish I Had Known Before Writing My
+                                | First Book
+                            p
+                                | Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Qui eligendi
+                                | vitae sit.
+                            .author.align-items-center.mt-3.mb-1
+                                a(href='author.html') Johnson smith
+                                |  in 
+                                a(href='#url') Design
+                            ul.blog-meta
+                                li.meta-item.blog-lesson
+                                    span.meta-value  April 13, 2020 
+                                li.meta-item.blog-students
+                                    span.meta-value  6min read
+            // pagination
+            .pagination-wrapper.mt-5
+                ul.page-pagination
+                    li
+                        span.page-numbers.current(aria-current='page') 1
+                    li
+                        a.page-numbers(href='#url') 2
+                    li
+                        a.page-numbers(href='#url') 3
+                    li
+                        a.page-numbers(href='#url') 4
+                    li
+                        a.page-numbers(href='#url') ....
+                    li
+                        a.page-numbers(href='#url') 15
+                    li
+                        a.next(href='#url')
+                            span.fa.fa-angle-right
+            // //pagination
+            // ad block
+            .ad-block.text-center.my-5
+                a(href='#url')
+                    img.img-fluid(src='/assets/images/ad.gif' alt='ad image')
+            // //ad block
+    .display-ad(style='margin: 8px auto; display: block; text-align:center;')
+
+block js
+    script(src='/assets/js/owl.carousel.js')
+    script.
+        $(document).ready(function () {
+        $('.owl-testimonial').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+        0: {
+        items: 1,
+        nav: false
+        },
+        480: {
+        items: 1,
+        nav: false
+        },
+        667: {
+        items: 1,
+        nav: true
+        },
+        1000: {
+        items: 1,
+        nav: true
+        }
+        }
+        })
+        })

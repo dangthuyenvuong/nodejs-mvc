@@ -1,0 +1,66 @@
+
+<header class="w3l-header">
+  <!-- /nav-->
+  <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+    <div class="container"><a class="navbar-brand" href="/"><span class="fa fa-pencil-square-o"></span> Design Blog</a>
+      <!--
+      if logo is image enable this
+      <a class="navbar-brand" href="#index.html">
+      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a>
+      -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span>--><span class="fa icon-expand fa-bars"></span><span class="fa icon-close fa-times"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item dropdown @@category__active"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories <span class="fa fa-angle-down"></span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item @@ls__active" href="lifestyle">Lifestyle posts</a><a class="dropdown-item @@cp__active" href="culture">Culture posts</a><a class="dropdown-item @@su__active" href="startup">Startup posts</a></div>
+          </li>
+          <li class="nav-item dropdown @@blog__active"><a class="nav-link dropdown-toggle" id="navbarDropdown1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <span class="fa fa-angle-down"></span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"><a class="dropdown-item @@fp__active" href="blog">Featured posts</a><a class="dropdown-item @@sp__active" href="blog-single">
+                Standard single
+                post</a><a class="dropdown-item @@vp__active" href="single">Video single post</a></div>
+          </li>
+          <li class="nav-item dropdown @@author__active"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More <span class="fa fa-angle-down"></span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item @@ap__active" href="author">Author page</a><a class="dropdown-item @@sr__active" href="search-results">Search results</a><a class="dropdown-item @@404__active" href="404">404 page</a></div>
+          </li>
+          <li class="nav-item @@contact__active"><a class="nav-link" href="contact">Contact</a></li>
+        </ul>
+        <!-- /search-right-->
+        <div class="search-right mt-lg-0 mt-2"><a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+          <!-- search popup-->
+          <div class="pop-overlay" id="search">
+            <div class="popup">
+              <h3 class="hny-title two">Search here</h3>
+              <form class="search-box" action="search-results" method="Get">
+                <input type="search" placeholder="Search for blog posts" name="search" required="required" autofocus=""/>
+                <button class="btn" type="submit">Search</button>
+              </form><a class="close" href="#close">&times;</a>
+            </div>
+          </div>
+          <!-- /search popup-->
+        </div>
+        <!-- //search-right-->
+        <div class="header-author d-flex ml-lg-4 pl-2 mt-lg-0 mt-3"><a class="img-circle img-circle-sm" href="author"><img class="img-fluid" src="assets/images/author.jpg" alt="..."/></a>
+          <div class="align-self ml-3"><a href="author">
+              <h5>Alexander</h5></a><span>Blog Writer</span></div>
+        </div>
+      </div>
+      <!-- toggle switch for light and dark theme-->
+      <div class="mobile-position">
+        <nav class="navigation">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input id="checkbox" type="checkbox"/>
+              <div class="mode-container"><i class="gg-sun"></i><i class="gg-moon"></i></div>
+            </label>
+          </div>
+        </nav>
+      </div>
+      <!-- //toggle switch for light and dark theme-->
+    </div>
+  </nav>
+  <!-- //nav-->
+</header>

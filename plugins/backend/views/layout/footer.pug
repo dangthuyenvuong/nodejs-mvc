@@ -1,0 +1,439 @@
+.app-wrapper-footer
+    .app-footer
+        .app-footer__inner
+            .app-footer-left
+                .footer-dots
+                    .dropdown
+                        a.dot-btn-wrapper(aria-haspopup='true' aria-expanded='false' data-toggle='dropdown')
+                            i.dot-btn-icon.lnr-bullhorn.icon-gradient.bg-mean-fruit
+                            .badge.badge-dot.badge-abs.badge-dot-sm.badge-danger
+                                | Notifications
+                        .dropdown-menu-xl.rm-pointers.dropdown-menu(tabindex='-1' role='menu' aria-hidden='true')
+                            .dropdown-menu-header.mb-0
+                                .dropdown-menu-header-inner.bg-deep-blue
+                                    .menu-header-image.opacity-1(style="background-image: url('/backend/assets/images/dropdown-header/city3.jpg');")
+                                    .menu-header-content.text-dark
+                                        h5.menu-header-title Notifications
+                                        h6.menu-header-subtitle
+                                            | You have 
+                                            b 21
+                                            |  unread
+                                            |                                                             messages
+                            ul.tabs-animated-shadow.tabs-animated.nav.nav-justified.tabs-shadow-bordered.p-3
+                                li.nav-item
+                                    a.nav-link.active(role='tab' data-toggle='tab' href='#tab-messages-header1')
+                                        span Messages
+                                li.nav-item
+                                    a.nav-link(role='tab' data-toggle='tab' href='#tab-events-header1')
+                                        span Events
+                                li.nav-item
+                                    a.nav-link(role='tab' data-toggle='tab' href='#tab-errors-header1')
+                                        span System Errors
+                            .tab-content
+                                #tab-messages-header1.tab-pane.active(role='tabpanel')
+                                    .scroll-area-sm
+                                        .scrollbar-container
+                                            .p-3
+                                                .notifications-box
+                                                    .vertical-time-simple.vertical-without-time.vertical-timeline.vertical-timeline--one-column
+                                                        .vertical-timeline-item.dot-danger.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | All Hands
+                                                                        | Meeting
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-warning.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    p
+                                                                        | Yet another one, at
+                                                                        span.text-success
+                                                                            | 15:00
+                                                                            | PM
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-success.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | Build the
+                                                                        | production release
+                                                                        span.badge.badge-danger.ml-2 NEW
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-primary.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | Something
+                                                                        | not important
+                                                                        .avatar-wrapper.mt-2.avatar-wrapper-overlap
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/1.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/2.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/3.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/4.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/5.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/9.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/7.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm
+                                                                                .avatar-icon
+                                                                                    img(src='/backend/assets/images/avatars/8.jpg' alt='')
+                                                                            .avatar-icon-wrapper.avatar-icon-sm.avatar-icon-add
+                                                                                .avatar-icon
+                                                                                    i +
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-info.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | This dot
+                                                                        | has an info state
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-danger.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | All Hands
+                                                                        | Meeting
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-warning.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    p
+                                                                        | Yet another one, at
+                                                                        span.text-success
+                                                                            | 15:00
+                                                                            | PM
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-success.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | Build the
+                                                                        | production release
+                                                                        span.badge.badge-danger.ml-2 NEW
+                                                                    span.vertical-timeline-element-date
+                                                        .vertical-timeline-item.dot-dark.vertical-timeline-element
+                                                            div
+                                                                span.vertical-timeline-element-icon.bounce-in
+                                                                .vertical-timeline-element-content.bounce-in
+                                                                    h4.timeline-title
+                                                                        | This dot
+                                                                        | has a dark state
+                                                                    span.vertical-timeline-element-date
+                                #tab-events-header1.tab-pane(role='tabpanel')
+                                    .scroll-area-sm
+                                        .scrollbar-container
+                                            .p-3
+                                                .vertical-without-time.vertical-timeline.vertical-timeline--animate.vertical-timeline--one-column
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-success
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title
+                                                                    | All Hands
+                                                                    | Meeting
+                                                                p
+                                                                    | Lorem ipsum dolor sic amet, today at
+                                                                    a(href='javascript:void(0);')
+                                                                        | 12:00
+                                                                        | PM
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-warning
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                p
+                                                                    | Another meeting today, at
+                                                                    b.text-danger 12:00 PM
+                                                                p
+                                                                    | Yet another one, at 
+                                                                    span.text-success
+                                                                        | 15:00
+                                                                        | PM
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-danger
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title
+                                                                    | Build the
+                                                                    | production release
+                                                                p
+                                                                    | Lorem ipsum dolor sit
+                                                                    | amit,consectetur eiusmdd tempor
+                                                                    | incididunt ut labore et dolore magna
+                                                                    | elit enim at
+                                                                    | minim veniam quis nostrud
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-primary
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title.text-success
+                                                                    | Something not important
+                                                                p
+                                                                    | Lorem ipsum dolor sit
+                                                                    | amit,consectetur elit enim at
+                                                                    | minim veniam quis nostrud
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-success
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title
+                                                                    | All Hands
+                                                                    | Meeting
+                                                                p
+                                                                    | Lorem ipsum dolor sic amet, today at
+                                                                    a(href='javascript:void(0);')
+                                                                        | 12:00
+                                                                        | PM
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-warning
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                p
+                                                                    | Another meeting today, at
+                                                                    b.text-danger 12:00 PM
+                                                                p
+                                                                    | Yet another one, at 
+                                                                    span.text-success
+                                                                        | 15:00
+                                                                        | PM
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-danger
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title
+                                                                    | Build the
+                                                                    | production release
+                                                                p
+                                                                    | Lorem ipsum dolor sit
+                                                                    | amit,consectetur eiusmdd tempor
+                                                                    | incididunt ut labore et dolore magna
+                                                                    | elit enim at
+                                                                    | minim veniam quis nostrud
+                                                                span.vertical-timeline-element-date
+                                                    .vertical-timeline-item.vertical-timeline-element
+                                                        div
+                                                            span.vertical-timeline-element-icon.bounce-in
+                                                                i.badge.badge-dot.badge-dot-xl.badge-primary
+                                                            .vertical-timeline-element-content.bounce-in
+                                                                h4.timeline-title.text-success
+                                                                    | Something not important
+                                                                p
+                                                                    | Lorem ipsum dolor sit
+                                                                    | amit,consectetur elit enim at
+                                                                    | minim veniam quis nostrud
+                                                                span.vertical-timeline-element-date
+                                #tab-errors-header1.tab-pane(role='tabpanel')
+                                    .scroll-area-sm
+                                        .scrollbar-container
+                                            .no-results.pt-3.pb-0
+                                                .swal2-icon.swal2-success.swal2-animate-success-icon
+                                                    .swal2-success-circular-line-left(style='background-color: rgb(255, 255, 255);')
+                                                    span.swal2-success-line-tip
+                                                    span.swal2-success-line-long
+                                                    .swal2-success-ring
+                                                    .swal2-success-fix(style='background-color: rgb(255, 255, 255);')
+                                                    .swal2-success-circular-line-right(style='background-color: rgb(255, 255, 255);')
+                                                .results-subtitle All caught up!
+                                                .results-title
+                                                    | There are no system errors!
+                            ul.nav.flex-column
+                                li.nav-item-divider.nav-item
+                                li.nav-item-btn.text-center.nav-item
+                                    button.btn-shadow.btn-wide.btn-pill.btn.btn-focus.btn-sm
+                                        | View
+                                        | Latest Changes
+                    .dots-separator
+                    .dropdown
+                        a.dot-btn-wrapper(aria-haspopup='true' data-toggle='dropdown' aria-expanded='false')
+                            i.dot-btn-icon.lnr-earth.icon-gradient.bg-happy-itmeo
+                        .rm-pointers.dropdown-menu(tabindex='-1' role='menu' aria-hidden='true')
+                            .dropdown-menu-header
+                                .dropdown-menu-header-inner.pt-4.pb-4.bg-focus
+                                    .menu-header-image.opacity-05(style="background-image: url('assets/images/dropdown-header/city2.jpg');")
+                                    .menu-header-content.text-center.text-white
+                                        h6.menu-header-subtitle.mt-0  Choose Language
+                            h6.dropdown-header(tabindex='-1')  Popular Languages
+                            button.dropdown-item(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.US
+                                |  USA
+                            button.dropdown-item(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.CH
+                                |  Switzerland
+                            button.dropdown-item(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.FR
+                                | France
+                            button.dropdown-item(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.ES
+                                | Spain
+                            .dropdown-divider(tabindex='-1')
+                            h6.dropdown-header(tabindex='-1') Others
+                            button.dropdown-item.active(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.DE
+                                | Germany
+                            button.dropdown-item(type='button' tabindex='0')
+                                span.mr-3.opacity-8.flag.large.IT
+                                |  Italy
+                    .dots-separator
+                    .dropdown
+                        a.dot-btn-wrapper.dd-chart-btn-2(aria-haspopup='true' data-toggle='dropdown' aria-expanded='false')
+                            i.dot-btn-icon.lnr-pie-chart.icon-gradient.bg-love-kiss
+                            .badge.badge-dot.badge-abs.badge-dot-sm.badge-warning
+                                | Notifications
+                        .dropdown-menu-xl.rm-pointers.dropdown-menu(tabindex='-1' role='menu' aria-hidden='true')
+                            .dropdown-menu-header
+                                .dropdown-menu-header-inner.bg-premium-dark
+                                    .menu-header-image(style="background-image: url('assets/images/dropdown-header/abstract4.jpg');")
+                                    .menu-header-content.text-white
+                                        h5.menu-header-title Users Online
+                                        h6.menu-header-subtitle
+                                            | Recent Account Activity
+                                            | Overview
+                            .widget-chart
+                                .widget-chart-content
+                                    .icon-wrapper.rounded-circle
+                                        .icon-wrapper-bg.opacity-9.bg-focus
+                                        i.lnr-users.text-white
+                                    .widget-numbers
+                                        span 344k
+                                    .widget-subheading.pt-2
+                                        | Profile views since last login
+                                    .widget-description.text-danger
+                                        span.pr-1
+                                            span 176%
+                                        i.fa.fa-arrow-left
+                                .widget-chart-wrapper
+                                    #dashboard-sparkline-carousel-4-pop
+                            ul.nav.flex-column
+                                li.nav-item-divider.mt-0.nav-item
+                                li.nav-item-btn.text-center.nav-item
+                                    button.btn-shine.btn-wide.btn-pill.btn.btn-warning.btn-sm
+                                        i.fa.fa-cog.fa-spin.mr-2
+                                        |  View Details
+            .app-footer-right
+                ul.header-megamenu.nav
+                    li.nav-item
+                        a.nav-link(data-placement='top' rel='popover-focus' data-offset='300' data-toggle='popover-custom')
+                            | Footer Menu
+                            i.fa.fa-angle-up.ml-2.opacity-8
+                        .rm-max-width.rm-pointers
+                            .d-none.popover-custom-content
+                                .dropdown-mega-menu.dropdown-mega-menu-sm
+                                    .grid-menu.grid-menu-2col
+                                        .no-gutters.row
+                                            .col-sm-6.col-xl-6
+                                                ul.nav.flex-column
+                                                    li.nav-item-header.nav-item Overview
+                                                    li.nav-item
+                                                        a.nav-link
+                                                            i.nav-link-icon.lnr-inbox
+                                                            span Contacts
+                                                    li.nav-item
+                                                        a.nav-link
+                                                            i.nav-link-icon.lnr-book
+                                                            span Incidents
+                                                            .ml-auto.badge.badge-pill.badge-danger
+                                                                | 5
+                                                    li.nav-item
+                                                        a.nav-link
+                                                            i.nav-link-icon.lnr-picture
+                                                            span Companies
+                                                    li.nav-item
+                                                        a.nav-link.disabled(disabled='')
+                                                            i.nav-link-icon.lnr-file-empty
+                                                            span Dashboards
+                                            .col-sm-6.col-xl-6
+                                                ul.nav.flex-column
+                                                    li.nav-item-header.nav-item
+                                                        | Sales &amp;
+                                                        | Marketing
+                                                    li.nav-item
+                                                        a.nav-link Queues
+                                                    li.nav-item
+                                                        a.nav-link
+                                                            | Resource
+                                                            | Groups
+                                                    li.nav-item
+                                                        a.nav-link
+                                                            | Goal Metrics
+                                                            .ml-auto.badge.badge-warning
+                                                                | 3
+                                                    li.nav-item
+                                                        a.nav-link Campaigns
+                    li.nav-item
+                        a.nav-link(data-placement='top' rel='popover-focus' data-offset='300' data-toggle='popover-custom')
+                            | Grid Menu
+                            .badge.badge-dark.ml-0.ml-1
+                                small NEW
+                            i.fa.fa-angle-up.ml-2.opacity-8
+                        .rm-max-width.rm-pointers
+                            .d-none.popover-custom-content
+                                .dropdown-menu-header
+                                    .dropdown-menu-header-inner.bg-tempting-azure
+                                        .menu-header-image.opacity-1(style="background-image: url('assets/images/dropdown-header/city5.jpg');")
+                                        .menu-header-content.text-dark
+                                            h5.menu-header-title Two Column Grid
+                                            h6.menu-header-subtitle
+                                                | Easy grid navigation inside
+                                                | popovers
+                                .grid-menu.grid-menu-2col
+                                    .no-gutters.row
+                                        .col-sm-6
+                                            button.btn-icon-vertical.btn-transition-text.btn-transition.btn-transition-alt.pt-2.pb-2.btn.btn-outline-dark
+                                                i.lnr-lighter.text-dark.opacity-7.btn-icon-wrapper.mb-2
+                                                | Automation
+                                        .col-sm-6
+                                            button.btn-icon-vertical.btn-transition-text.btn-transition.btn-transition-alt.pt-2.pb-2.btn.btn-outline-danger
+                                                i.lnr-construction.text-danger.opacity-7.btn-icon-wrapper.mb-2
+                                                | Reports
+                                        .col-sm-6
+                                            button.btn-icon-vertical.btn-transition-text.btn-transition.btn-transition-alt.pt-2.pb-2.btn.btn-outline-success
+                                                i.lnr-bus.text-success.opacity-7.btn-icon-wrapper.mb-2
+                                                | Activity
+                                        .col-sm-6
+                                            button.btn-icon-vertical.btn-transition-text.btn-transition.btn-transition-alt.pt-2.pb-2.btn.btn-outline-focus
+                                                i.lnr-gift.text-focus.opacity-7.btn-icon-wrapper.mb-2
+                                                | Settings
+                                ul.nav.flex-column
+                                    li.nav-item-divider.nav-item
+                                    li.nav-item-btn.clearfix.nav-item
+                                        .float-left
+                                            button.btn.btn-link.btn-sm Link Button
+                                        .float-right
+                                            button.btn-shadow.btn.btn-info.btn-sm
+                                                | Info
+                                                | Button

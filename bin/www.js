@@ -7,7 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('node-mvc:server');
 var http = require('http');
-var socketDatabaseRealtime = require('../plugins/socket-database-realtime/index');
+
+
 
 /**
  * Get port from environment and store in Express.
@@ -25,7 +26,16 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-socketDatabaseRealtime(server);
+
+
+
+// Plugin
+
+require('../plugins/socket-database-realtime/index')(server);
+require('../plugins/backend')(app);
+
+
+// Start Server
 
 server.listen(port);
 server.on('error', onError);
@@ -89,6 +99,10 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+
+  // if (!process.env.DEBUG) {
+  //   console.log = function () { }
+  // }
 }
 
 

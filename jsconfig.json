@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonJS",
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules", "bower_components", "public", "tmp", "temp"],
+    "include": ["models", "plugins", "routers", "views", "controllers", "bin", "app.js"]
+}
