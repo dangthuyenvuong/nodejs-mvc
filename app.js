@@ -25,7 +25,6 @@ var app = express();
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-
 /**
  * Create HTTP server.
  */
@@ -92,6 +91,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
+  console.log('Server start at port: ' + port)
 
   /**
    * Normalize a port into a number, string, or false.

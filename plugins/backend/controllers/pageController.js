@@ -6,7 +6,7 @@ module.exports = {
     index: function (req, res, next) {
         let page = req.params.page || 'index';
 
-        let pageDir = path.join(__dirname, '../views/page/' + page + '.pug');
+        let pageDir = path.join(backend_view, '/page/' + page + '.pug');
         console.log(fs.existsSync(pageDir))
 
         if (fs.existsSync(pageDir)) {
