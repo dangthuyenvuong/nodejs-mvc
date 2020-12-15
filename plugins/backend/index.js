@@ -1,3 +1,6 @@
+
+
+
 const path = require('path');
 global.backend_view =  path.join(__dirname, 'views');
 

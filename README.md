@@ -8,7 +8,7 @@
 <br>
 <br>
 
-# Structs
+# Folder Struct
 1. core: 
 2.  config: 
 3. controllers
